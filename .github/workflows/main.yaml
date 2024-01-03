@@ -1,4 +1,4 @@
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   hello_world_job:
@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: tuckermiles70/ghost-markdown-publish@latest
+        uses: tuckermiles70/ghost-markdown-publish@v0
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
