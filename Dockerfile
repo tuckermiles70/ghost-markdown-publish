@@ -1,7 +1,7 @@
-FROM python:3.12
+FROM cgr.dev/chainguard/python:latest-dev
 
 RUN mkdir /app
 COPY main.py /app
 WORKDIR /app
 
-ENTRYPOINT ["main.py"]
+ENTRYPOINT [ "python", "/app/main.py" ]
