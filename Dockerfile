@@ -1,6 +1,6 @@
 FROM python:3.12
 
-RUN mkdir /webapp
+RUN mkdir /app
 COPY main.py /app
 WORKDIR /app
 
