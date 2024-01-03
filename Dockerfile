@@ -1,5 +1,6 @@
-FROM python:3-slim
+FROM python:3.12
 
+RUN mkdir /webapp
 COPY main.py /app
 WORKDIR /app
 
